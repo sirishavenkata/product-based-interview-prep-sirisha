@@ -33,3 +33,30 @@ for (int x : nums) {
     // map.put(x, map.getOrDefault(x, 0) + 1);
 }
 
+Algo :Space& Time 
+
+Arrays.sort(n) --->Always take klog k cost
+Yes — sorting always costs O(k log k) where k = number of elements being sorted. This is a fact about how sorting works.
+You don't derive it every time — you just memorise it like a formula and move on.
+
+complexity cheatsheet
+The only complexity cheat sheet you need for interviews
+
+Arrays.sort(arr)  -----   Always O(k log k)-->k = array length
+
+map.get() / map.put()----- Always O(1)---->HashMap lookup is instant
+
+Simple for loop ----O(n) ----->visits each element once
+
+Loop inside loop ---> O(n²) -----n × n comparisons
+
+Halving repeatedly(binary search)  ---- O(log n)-->halve → halve → halve
+
+Single statement
+(int x = 5)    -----O(1)----> same cost always
+  ~~Space complexity:~~
+What you createSpace costnew HashMap<>() storing n items -->O(n) 
+new int[n] / new char[n]  ----> O(n)
+A few plain variables int i, j -----> O(1) — doesn't grow 
+Recursion calling itself n times   ---> O(n) — the call stack
+Nothing new created ---->O(1)

@@ -60,3 +60,9 @@ new int[n] / new char[n]  ----> O(n)
 A few plain variables int i, j -----> O(1) — doesn't grow 
 Recursion calling itself n times   ---> O(n) — the call stack
 Nothing new created ---->O(1)
+-------------------------------------------------------------
+
+priority Queue -> data structure that automatically keeps elements in sorted order
+ and you can just pick the top k from it, its not threadsafe , so to leverage threadsafe use Priority Blocking Queue
+
+treeMap also keeps the elements in sorted order , but it does this sort order only with keys -> treemap use sortbykey to keep in sorted order
